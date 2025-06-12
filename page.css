@@ -1,0 +1,160 @@
+:root {
+    --main-font: 'Montserrat';
+    --button-color: rgb(94, 231, 223);
+}
+
+* {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoGame {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.logoGame img {
+    width: 100%;
+    height: auto;
+}
+
+.logoText {
+    text-align: center;
+    color: #333;
+}
+
+.genCode {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#guideText {
+    background: #464B6A;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#guideText h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+#code {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#generated {
+    font-size: 1.2em;
+    word-break: break-all;
+}
+
+.generateBtn {
+    background: var(--button-color);
+    color: #333;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: block;
+    margin: 20px auto;
+}
+
+.generateBtn:hover {
+    transform: scale(1.05);
+}
+
+.iframe-container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.iframe-container h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 80vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        gap: 10px;
+    }
+
+    .logoGame {
+        min-width: 200px;
+    }
+
+    .logoText h3 {
+        font-size: 1.1em;
+    }
+
+    .genCode {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .generateBtn {
+        padding: 10px 30px;
+        font-size: 1em;
+    }
+
+    #generated {
+        font-size: 1em;
+    }
+
+    .iframe-container {
+        padding: 0 10px;
+    }
+
+    .iframe-container iframe {
+        height: 60vh;
+    }
+}
